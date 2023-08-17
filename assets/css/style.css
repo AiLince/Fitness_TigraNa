@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(../fonts/Roboto-Meduim.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoMediumItalic';
+    src: url(../fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+
+/* 1st screen | Настя */
+
+.main-container {
+    height: 100vh;
+    background-color: #3B4674;
+    background: url(../images/background_1.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #00000092, #00000000);
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    z-index: 100;
+}
+
+.menu-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.main-content {
+    display: flex;
+    width: 50%;
+}
+
+.abovetitle-text {
+font-size: 16px;
+font-weight: 500;
+line-height: 135%;
+text-transform: uppercase;
+}
+
+.main-title {
+    font-size: 88px;
+    font-family: 'RobotoItalic';
+    font-weight: 500;
+    line-height: 94.5%;
+}
+
+.main-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+.underbtn-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+}
