@@ -29,13 +29,18 @@
     color: #333;
 }
 .author__info{
-    display: grid;
-    /*grid-template-columns: 554px 452px;*/
+    /*display: grid;
+    grid-template-columns: 554px 452px;
     grid-template-columns: 554px 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 53px;
+    grid-column-gap: 53px;*/
+    display: flex;
+    justify-content: space-around;
     margin-left: 165px;
     margin-right: 165px;
+}
+.author__info-about{
+    width: 554px;
 }
 .author__info-title h2{
     font-size: 36px;
@@ -66,6 +71,22 @@
 }
 .author__info-study{
     margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
+}
+.author__info-study img {
+    transition: transform 0.3s;
+}
+
+.author__info-study img:hover {
+    transform: scale(1.2);
+}
+.author__info-text{
+    width: 452px;
+    margin-left: 78px;
 }
 .author__info-text p{
     margin-top: 30px;
@@ -73,17 +94,47 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
+    margin-left: 35px;
+}
+.author__info-image{
+    margin-left: 53px;
+}
+.slogan{
+    margin-top: 160px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center;
+}
+.slogan-text{
+    margin-top: 100px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.slogan-button{
+    margin-top: 30px;
+    text-align: center;
+}
+.slogan-btn{
+    width: 720px;
+    height: 100px;
+    flex-shrink: 0;
 }
 .footer{
     width: 100%;
     max-width: 1440px;
     height: 280px;
-    margin: 0 auto;
+    margin: 160px auto 0 auto;
     background-color: #3B4674;
     color: #F5F5F5;
 }
 .footer__logo{
-    /*margin-top: 90px;*/
+    margin-top: 90px;
     text-align: center;
 }
 .footer__info{
