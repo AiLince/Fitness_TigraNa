@@ -86,39 +86,45 @@ text-transform: uppercase;
 }
 
 .main-btn {
-    background-color: #F5F5F5;
-    color: #3B4674;
     margin-top: 70px;
     margin-bottom: 10px;
-    border: none;
-    transition: background-color 1s;
+    border: 2px solid currentColor;
+    border-radius: 60px;
+    color: #3B4674;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+    transition: .3s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+.main-btn::after {
+    background-color: #3B4674;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.main-btn:hover::after {
+    transform: translate(0, 0);
 }
 
 .main-btn:hover {
-    background-color: #3B4674;
+    border: 2px solid transparent;
     color: #F5F5F5;
-    border: 3px solid #F5F5F5;
-    animation-name: slide-bg;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes slide-bg {
-    from {
-        background-color: #F5F5F5;
-    }
-    to {
-        background-color: #3B4674;
-    }
-}
-
-@keyframes slide-bg {
-    from {
-        background-color: #F5F5F5;
-    }
-    to {
-        background-color: #3B4674;
-    }
+    transform: scale(1.05);
+    will-change: transform;
 }
 
 .underbtn-text {
