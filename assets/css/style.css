@@ -85,6 +85,20 @@ text-transform: uppercase;
     line-height: 135%;
 }
 
+.logo {
+    animation: 0.5s anim-lineUp ease-out;
+}
+
+.menu-item {
+    animation: 2.5s anim-lineUp ease-out;
+}
+
+.main-title,
+.main-text,
+.abovetitle-text { 
+    animation: 4s anim-lineUp ease-out;
+}
+
 .main-btn {
     margin-top: 70px;
     margin-bottom: 10px;
@@ -97,6 +111,7 @@ text-transform: uppercase;
     transition: .3s transform ease-in-out;
     will-change: transform;
     z-index: 0;
+    animation: 4.5s anim-lineUp ease-out;
 }
 
 .main-btn::after {
@@ -132,4 +147,23 @@ text-transform: uppercase;
     font-weight: 400;
     line-height: 130%;
     margin-left: 80px;
+    animation: 6s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
