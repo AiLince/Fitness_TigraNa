@@ -3,3 +3,30 @@
     margin: 0;
     font-family: 'RobotoRegular';
 }
+
+ul {
+    list-style: none;
+}
+
+a, li {
+    text-decoration: none;
+}
+
+button {
+    width: 488px;
+    height: 100px;
+    border-radius: 60px;
+    border: none;
+    background: #3B4674;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #3B4674;
+}
