@@ -31,7 +31,7 @@
     background: url(../images/background_1.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: #F5F5F5;
 }
 
 .header {
@@ -39,6 +39,7 @@
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, #00000092, #00000000);
+    padding: 24px 165px;
 }
 
 .menu-list {
@@ -50,13 +51,15 @@
 .menu-item a {
     text-decoration: none;
     cursor: pointer;
-    color: #ffffff;
+    color: #F5F5F5;
     font-size: 14px;
+    margin-right: 20px;
 }
 
 .main-content {
-    display: flex;
-    width: 50%;
+    width: 45%;
+    margin-left: 165px;
+    margin-top: 30px;
 }
 
 .abovetitle-text {
@@ -71,6 +74,8 @@ text-transform: uppercase;
     font-family: 'RobotoItalic';
     font-weight: 500;
     line-height: 94.5%;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .main-text {
@@ -80,8 +85,45 @@ text-transform: uppercase;
     line-height: 135%;
 }
 
+.main-btn {
+    background-color: #F5F5F5;
+    color: #3B4674;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border: none;
+    transition: background-color 1s;
+}
+
+.main-btn:hover {
+    background-color: #3B4674;
+    color: #F5F5F5;
+    border: 3px solid #F5F5F5;
+    animation-name: slide-bg;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide-bg {
+    from {
+        background-color: #F5F5F5;
+    }
+    to {
+        background-color: #3B4674;
+    }
+}
+
+@keyframes slide-bg {
+    from {
+        background-color: #F5F5F5;
+    }
+    to {
+        background-color: #3B4674;
+    }
+}
+
 .underbtn-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 130%;
+    margin-left: 80px;
 }
