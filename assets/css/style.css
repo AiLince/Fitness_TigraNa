@@ -278,8 +278,10 @@ text-transform: uppercase;
     background-color: #3B4674;
     color: #F5F5F5;
 }
-.footer__logo{
+.footer__logo img{
     margin-top: 90px;
+}
+.footer__logo{
     text-align: center;
 }
 .footer__info{
