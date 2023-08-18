@@ -326,8 +326,7 @@ text-transform: uppercase;
     grid-column-gap: 53px;*/
     display: flex;
     justify-content: space-around;
-    margin-left: 165px;
-    margin-right: 165px;
+    margin: 165px 165px 0 165px;
 }
 .author__info-about{
     width: 554px;
