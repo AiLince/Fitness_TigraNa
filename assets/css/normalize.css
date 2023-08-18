@@ -12,6 +12,29 @@ a, li {
     text-decoration: none;
 }
 
+a {
+    display: inline-block;
+    color: #f3f3f3;
+    line-height: 1;
+    cursor: pointer;
+}
+
+a:after {
+    background-color: #f3f3f3;
+    display: block;
+    content: "";
+    height: 1.5px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
 button {
     width: 488px;
     height: 100px;

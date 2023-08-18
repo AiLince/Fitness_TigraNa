@@ -22,6 +22,151 @@
     font-family: 'RobotoItalic';
     src: url(../fonts/Roboto-Italic.ttf);
 }
+
+/* 1st screen | Настя */
+
+.main-container {
+    height: 100vh;
+    background-color: #3B4674;
+    background: url(../images/background_1.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    color: #F5F5F5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #00000092, #00000000);
+    padding: 24px 165px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    z-index: 100;
+}
+
+.menu-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #F5F5F5;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.main-content {
+    width: 45%;
+    margin-left: 165px;
+    margin-top: 30px;
+}
+
+.abovetitle-text {
+font-size: 16px;
+font-weight: 500;
+line-height: 135%;
+text-transform: uppercase;
+}
+
+.main-title {
+    font-size: 88px;
+    font-family: 'RobotoItalic';
+    font-weight: 500;
+    line-height: 94.5%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.main-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+.logo {
+    animation: 0.5s anim-lineUp ease-out;
+}
+
+.menu-item {
+    animation: 2.5s anim-lineUp ease-out;
+}
+
+.main-title,
+.main-text,
+.abovetitle-text { 
+    animation: 4s anim-lineUp ease-out;
+}
+
+.main-btn {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border: 2px solid currentColor;
+    border-radius: 60px;
+    color: #3B4674;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: relative;
+    transition: .3s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    animation: 4.5s anim-lineUp ease-out;
+}
+
+.main-btn::after {
+    background-color: #3B4674;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.main-btn:hover::after {
+    transform: translate(0, 0);
+}
+
+.main-btn:hover {
+    border: 2px solid transparent;
+    color: #F5F5F5;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.underbtn-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-left: 80px;
+    animation: 6s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 .author{
     width: 100%;
     max-width: 1440px;
