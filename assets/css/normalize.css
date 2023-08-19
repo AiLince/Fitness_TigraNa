@@ -38,19 +38,47 @@ a:focus:after {
 button {
     width: 488px;
     height: 100px;
-    border-radius: 60px;
-    border: none;
-    background: #3B4674;
-    color: #ffffff;
     font-size: 26px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
     cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 60px;
+    color: #F5F5F5;
+    background-color: #3B4674;
+    overflow: hidden;
+    position: relative;
+    transition: .3s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    animation: 4.5s anim-lineUp ease-out;
+}
+
+button::after {
+    background-color: #F5F5F5;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .3s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(0, 0);
 }
 
 button:hover {
-    background: #ffffff;
+    border: 2px solid transparent;
     color: #3B4674;
-    border: #3B4674 1px solid;
+    transform: scale(1.05);
+    will-change: transform;
 }
