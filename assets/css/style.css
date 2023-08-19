@@ -58,13 +58,12 @@
 
 .main-content {
     width: 45%;
-    margin-left: 165px;
-    margin-top: 30px;
+    margin-left: 20%;
+    margin-top: 2%;
 }
 
 .abovetitle-text {
 font-size: 16px;
-font-weight: 500;
 line-height: 135%;
 text-transform: uppercase;
 }
@@ -72,7 +71,6 @@ text-transform: uppercase;
 .main-title {
     font-size: 88px;
     font-family: 'RobotoItalic';
-    font-weight: 500;
     line-height: 94.5%;
     margin-top: 10px;
     margin-bottom: 50px;
@@ -81,7 +79,6 @@ text-transform: uppercase;
 .main-text {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 500;
     line-height: 135%;
 }
 
@@ -100,8 +97,8 @@ text-transform: uppercase;
 }
 
 .main-btn {
-    margin-top: 70px;
-    margin-bottom: 10px;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
     border: 2px solid currentColor;
     border-radius: 60px;
     color: #3B4674;
@@ -144,7 +141,6 @@ text-transform: uppercase;
 
 .underbtn-text {
     font-size: 14px;
-    font-weight: 400;
     line-height: 130%;
     margin-left: 80px;
     animation: 6s anim-lineUp ease-out;
@@ -176,6 +172,7 @@ text-transform: uppercase;
     background-size: cover;
     background-repeat: no-repeat;
     color: #F5F5F5;
+    height: 100vh;
 }
 
 .header {
@@ -183,13 +180,12 @@ text-transform: uppercase;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, #00000092, #00000000);
-    padding: 24px 165px;
+    padding: 1.5% 11%;
 }
 
 .menu-list {
     display: flex;
     list-style: none;
-    z-index: 100;
 }
 
 .menu-item a {
@@ -197,34 +193,35 @@ text-transform: uppercase;
     cursor: pointer;
     color: #F5F5F5;
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 1.5vw;
 }
 
 .main-content {
     width: 45%;
-    margin-left: 165px;
-    margin-top: 30px;
+    margin-left: 11vw;
+    margin-top: 5vh;
+    height: 90%;
 }
 
 .abovetitle-text {
-font-size: 16px;
-font-weight: 500;
-line-height: 135%;
-text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 135%;
+    text-transform: uppercase;
 }
 
 .main-title {
-    font-size: 88px;
+    font-size: 6vw;
     font-family: 'RobotoItalic';
     font-weight: 500;
     line-height: 94.5%;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 1.2vh;
+    margin-bottom: 6.5vh;
 }
 
 .main-text {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.35vw;
     font-weight: 500;
     line-height: 135%;
 }
@@ -244,8 +241,8 @@ text-transform: uppercase;
 }
 
 .main-btn {
-    margin-top: 70px;
-    margin-bottom: 10px;
+    margin-top: 9vh;
+    margin-bottom: 1.3vh;
     border: 2px solid currentColor;
     border-radius: 60px;
     color: #3B4674;
@@ -290,7 +287,6 @@ text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
     line-height: 130%;
-    margin-left: 80px;
     animation: 6s anim-lineUp ease-out;
 }
 
