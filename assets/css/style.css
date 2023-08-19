@@ -171,10 +171,9 @@ text-transform: uppercase;
 /* 1st screen | Настя */
 
 .main-container {
-    height: 100vh;
     background-color: #3B4674;
     background: url(../images/background_1.png);
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #F5F5F5;
 }
