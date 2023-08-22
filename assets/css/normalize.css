@@ -50,7 +50,7 @@ button {
     line-height: normal;
     text-transform: uppercase;
     cursor: pointer;
-    border: 2px solid currentColor;
+    border: none;
     border-radius: 60px;
     color: #F5F5F5;
     background-color: #3B4674;
