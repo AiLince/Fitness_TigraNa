@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,57 +8,176 @@
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <title>Fitness TigraNa</title>
 </head>
+
 <body>
 
     <!-- 1st screen | Настя -->
-<div class="main-container">   
-    <section class="main">
-        <header class="header">
-            <div class="logo">
-                <img src="assets\images\logo.svg" alt="TigraNa">
+    <div class="main-container">
+        <section class="main">
+            <header class="header">
+                <div class="logo">
+                    <img src="assets\images\logo.svg" alt="TigraNa">
+                </div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="#">Кому подойдёт</a></li>
+                        <li class="menu-item"><a href="#">О курсе</a></li>
+                        <li class="menu-item"><a href="#">Результат</a></li>
+                        <li class="menu-item"><a href="#">Противопоказания</a></li>
+                        <li class="menu-item"><a href="#">Тренер</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="main-content">
+            <div class="main-info">
+                <p class="abovetitle-text">Онлайн-формат</p>
+                <h1 class="main-title">Стройность после родов</h1>
+                <p class="main-text">Длительность 4 недели <br> С доступом на 3 месяца</p>
+                <div class="main-action">
+                    <button class="main-btn">Открыть путь</button>
+                    <p class="underbtn-text">Один клик, и ты найдешь СВОЙ путь к телу мечты</p>
+                </div>
             </div>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item"><a href="#">Кому подойдёт</a></li>
-                    <li class="menu-item"><a href="#">О курсе</a></li>
-                    <li class="menu-item"><a href="#">Результат</a></li>
-                    <li class="menu-item"><a href="#">Противопоказания</a></li>
-                    <li class="menu-item"><a href="#">Тренер</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-    
-    <section class="main-content">
-        <div class="main-info">
-            <p class="abovetitle-text">Онлайн-формат</p>
-            <h1 class="main-title">Стройность после родов</h1>
-            <p class="main-text">Длительность 4 недели <br> С доступом на 3 месяца</p>
-            <div class="main-action">
-                <button class="main-btn">Открыть путь</button>
-                <p class="underbtn-text">Один клик, и ты найдешь СВОЙ путь к телу мечты</p>
-            </div>
+        </section>
+    </div>
+
+    <section class="yes-no">
+        <h2>С момента родов уже прошло 6 месяцев?</h2>
+        <div class="yes-no-action">
+            <button id="yes">Да</button>
+            <button id="no">Нет</button>
         </div>
     </section>
-</div> 
 
-<section class="yes-no">
-    <h2>С момента родов уже прошло 6 месяцев?</h2>
-    <div class="yes-no-action">
-        <button id="yes">Да</button>
-        <button id="no">Нет</button>
-    </div>
-</section>
+    <section class="booking">
+        <div class="booking-info">
+            <h3 class="booking-info-text">
+                Ты можешь забронировать место на курсе сейчас, <br> а к занятиям приступить через полгода после родов
+            </h3>
+            <button class="booking-btn">Бронирую!</button>
+            <p class="booking-underbtn-text">В подарок гайд «Первый шаг»</p>
+        </div>
+    </section>
 
-<section class="booking">
-    <div class="booking-info">
-        <h3 class="booking-info-text">
-            Ты можешь забронировать место на курсе сейчас, <br> а к занятиям приступить через полгода после родов
-        </h3>
-        <button class="booking-btn">Бронирую!</button>
-        <p class="booking-underbtn-text">В подарок гайд «Первый шаг»</p>
-    </div>
-</section>
+    <section id="who" class="who">
+        <h2 class="who-name">Этот курс для женщин, которые хотят:</h2>
+        <div class="who-container">
+            <div class="who-container__item ">
+                <div class="reasons">
+                    Тренироваться по 15-30 минут в день, но не знают с чего начать
+                </div>
+            </div>
+            <div class="who-container__item">
+                <div class="reasons">
+                    Забыть про голодовки и вкусно питаться без последствий в виде лишних кг
+                </div>
+            </div>
+            <div class="who-container__item">
+                <div class="reasons">
+                    Ходить на пляж в красивом купальнике без стеснения
+                </div>
+            </div>
+            <div class="who-container__item">
+                <div class="reasons">
+                    Привлекать мужа и после родов, чтобы не распускал слюни на других
+                </div>
+            </div>
+            <div class="who-container__item">
+                <div class="reasons">
+                    Получить долговременный результат и забыть про «КАЧЕЛИ» веса
+                </div>
+            </div>
+            <div class="who-container__item">
+                <div class="reasons">
+                    Почувствовать легкость, улучшить общее самочувствие и сделать фигуру привлекательнее
+                </div>
+            </div>
+        </div>
+        <div class="who-tagline ">
+            СУДЬБА – СУДЬБОЙ, НО ВЫБОР ЗА ТОБОЙ!
+        </div>
+        <img src="./assets/images/figure-types.png" alt="figure types" class="who-img" />
+        <button class="who-btn">ГОТОВА НАЧАТЬ!</button>
+        <h2 class="who-name">Что вас ждёт на курсе:</h2>
+        <div class="who-options-container">
+            <div>
+                <h3 class="options">20 ТРЕНИРОВОК по 15-30 минут:</h3>
+            </div>
+            <div>
+                <h3 class="options">
+                    На курсе не будет:
+                </h3>
+            </div>
+            <div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Лучшие упражнения без ущерба для коленей, вен, спины и суставов
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Проверка техники выполнения упражнений с обратной связью от Натальи
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Разбор КБЖУ в легкой и доступной форме
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Замеры каждую неделю и проверка отчетов питания
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Полезные гайды по возвращению любви к своему телу
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/check-mark.svg" alt="check mark" class="who-options-icon" />
+                    <span>
+                        Ежедневные ответы от Натальи на ваши вопросы в WA/Telegram
+                    </span>
+                </div>
+
+            </div>
+            <div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/cross.svg" alt="cross" class="who-options-icon" />
+                    <span>
+                        Срывов
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/cross.svg" alt="cross" class="who-options-icon" />
+                    <span>
+                        Диет
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/cross.svg" alt="cross" class="who-options-icon" />
+                    <span>
+                        Многочасовых тренировок
+                    </span>
+                </div>
+                <div class="who-options-container__item">
+                    <img src="./assets/images/cross.svg" alt="cross" class="who-options-icon" />
+                    <span>
+                        Волшебных пилюль
+                    </span>
+                </div>
+            </div>
+        </div>
+        <button class="who-btn">СТАРТУЮ!</button>
+    </section>
 
     <section id="author" class="author">
         <div class="author__info">
@@ -68,7 +188,10 @@
                 </div>
                 <div class="author__info-info">
                     <h3>Поможет открыть путь к созданию фигуры мечты</h3>
-                    <p>Имеет 4 красных диплома, а это значит, что она с лёгкостью покоряет любые вершины. Окончила Федеральную школу фитнес-тренеров и получила диплом о профессиональной переподготовке с присвоением квалификации «Тренер-преподаватель». Диплом даёт право на ведение профессиональной деятельности в сфере физической культуры и спорта.</p>
+                    <p>Имеет 4 красных диплома, а это значит, что она с лёгкостью покоряет любые вершины. Окончила
+                        Федеральную школу фитнес-тренеров и получила диплом о профессиональной переподготовке с
+                        присвоением квалификации «Тренер-преподаватель». Диплом даёт право на ведение профессиональной
+                        деятельности в сфере физической культуры и спорта.</p>
                 </div>
                 <div class="author__info-study">
                     <img src="assets/images/certificate1.png" alt="certificate">
@@ -82,14 +205,15 @@
                     <img src="assets/images/author.png" alt="trainer">
                 </div>
                 <div class="author__info-text">
-                    <p>В спорте с 6 лет, профессионально занималась спортивной гимнастикой и потом ушла в фитнес, опыт более 10 лет. Мама, чья практика показывает, что ребёнок не помеха на пути к стройности.</p>
+                    <p>В спорте с 6 лет, профессионально занималась спортивной гимнастикой и потом ушла в фитнес, опыт
+                        более 10 лет. Мама, чья практика показывает, что ребёнок не помеха на пути к стройности.</p>
                 </div>
             </div>
         </div>
         <div class="author__slogan">
             <div class="slogan">
-                <p>Количество мест ограничено!<br> 
-                Успей купить курс СЕГОДНЯ со скидкой</p>
+                <p>Количество мест ограничено!<br>
+                    Успей купить курс СЕГОДНЯ со скидкой</p>
             </div>
             <div class="slogan-text">
                 <p>На курсе очень комфортно, жду вас за результатом!</p>
@@ -100,21 +224,23 @@
         </div>
     </section>
     <footer class="footer">
-            <div class="footer__logo">
-                <img src="assets/images/logo.svg" alt="logo">
+        <div class="footer__logo">
+            <img src="assets/images/logo.svg" alt="logo">
+        </div>
+        <div class="footer__info">
+            <div class="footer__info-copyright">
+                <p>© 2023 Все права защищены</p>
             </div>
-            <div class="footer__info">
-                <div class="footer__info-copyright">
-                    <p>© 2023 Все права защищены</p>
-                </div>
-                <div class="footer__info-social">
-                <a href="https://instagram.com/tigra_na.sport"><img src="assets/images/instagram.svg" alt="instagram"></a>    
-                </div>
-                <div class="footer__info-agreement">
-                    <p>Пользовательское соглашение</p>
-                </div>
+            <div class="footer__info-social">
+                <a href="https://instagram.com/tigra_na.sport"><img src="assets/images/instagram.svg"
+                        alt="instagram"></a>
             </div>
+            <div class="footer__info-agreement">
+                <p>Пользовательское соглашение</p>
+            </div>
+        </div>
     </footer>
     <script src="assets\js\index.js"></script>
 </body>
+
 </html>
