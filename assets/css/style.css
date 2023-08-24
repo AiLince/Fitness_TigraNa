@@ -277,17 +277,24 @@
 .author__info-study{
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 272px 272px;
+    grid-template-rows: 192px 192px;
     grid-column-gap: 11px;
     grid-row-gap: 11px;
 }
 .author__info-study img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s;
 }
 
 .author__info-study img:hover {
-    transform: scale(1.2);
+    transform: scale(2.051, 2.057);
+    -webkit-transform: scale(2.051, 2.057);
+    -moz-transform: scale(2.051, 2.057);
+    -ms-transform: scale(2.051, 2.057);
+    -o-transform: scale(2.051, 2.057);
 }
 .author__info-text{
     width: 452px;
@@ -344,11 +351,15 @@
 .footer__logo{
     text-align: center;
 }
+
 .footer__info{
     margin: 68px 165px 0 165px;
     /*margin-left: 165px;*/
     display: flex;
     justify-content: space-around;
+}
+.footer__info-social a, .footer__logo a{
+    text-decoration: none;
 }
 .footer__info-copyright, .footer__info-agreement{
     font-size: 14px;
