@@ -1,0 +1,106 @@
+.results {
+  width: 60%;
+  margin: 5% 20%;
+  height: auto;
+}
+.results__textBLocks,
+.result__block {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10% 0;
+}
+.result__block {
+  width: 20rem;
+  height: 10rem;
+  margin: 40% 0;
+}
+
+.result__image_picture {
+  width: 269px;
+  height: auto;
+  margin: 0 5%;
+}
+.results__text {
+  margin: 0 2%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.results__header,
+#results__header1,
+#contra__text {
+  font-size: 2rem;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 600;
+}
+.results__header {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.results__countdown {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 10% 0 5% 0;
+}
+// ---------date---------------
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coundown__item {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  span {
+    text-align: center;
+  }
+}
+.date__text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2%;
+}
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #3b4674;
+}
+.days_span {
+  color: #3b4674;
+}
+
+// ------------------contra------------
+
+.contra {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contra__list {
+  li {
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+    vertical-align: middle;
+    break-inside: avoid-column;
+  }
+  li::before {
+    content: "";
+    background-image: url("/assets/images/krest.png");
+    background-size: 20px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+  }
+}
