@@ -337,6 +337,32 @@
     margin: 100px 13%;
 }
 
+@media (max-width: 768px) {
+    .yes-no {
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .yes-no h2 {
+        margin: 3% 20% 0 20%;
+        font-size: 36px;
+    }
+    
+    .yes-no-action {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+    }
+
+    .yes-no button {
+        margin: 2vh 0 2vh 0;
+    }
+}
+
 /* booking */
 
 .booking {
@@ -352,7 +378,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .booking-info-text {
@@ -370,6 +395,16 @@
     font-weight: 400;
     line-height: 130%;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .booking {
+        max-width: 768px;
+        background: url("../images/bg_booking_adaptive.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+    }
 }
 
 
