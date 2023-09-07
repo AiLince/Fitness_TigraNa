@@ -411,16 +411,14 @@
 /* author */
 
 .author {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 1110px;
+    margin: 165px auto 0 auto;
     color: #333;
 }
 
 .author__info {
     display: flex;
     justify-content: space-around;
-    margin: 165px 165px 0 165px;
 }
 
 .author__info-about {
@@ -530,10 +528,10 @@
 }
 
 .footer {
-    width: 100%;
-    max-width: 1440px;
+    /*width: 100%;
+    max-width: 1440px;*/
     height: 280px;
-    margin: 160px auto 0 auto;
+    margin-top: 160px;
     background-color: #3B4674;
     color: #F5F5F5;
 }
